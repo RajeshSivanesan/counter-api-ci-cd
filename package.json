@@ -1,18 +1,32 @@
 {
-  "name": "counter-api",
-  "version": "1.0.0",
-  "description": "Tiny Counter API (Express + MongoDB) with CI/CD",
-  "main": "src/index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "node --watch index.js",
-    "start": "node index.js",
-    "lint": "echo \"(optional) add eslint later\""
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongoose": "^8.6.1",
-    "cors": "^2.8.5"
-  }
+    "name": "counter-api",
+    "version": "1.0.0",
+    "description": "Tiny Counter API (Express + MongoDB) with CI/CD",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node --watch index.js",
+        "start": "node index.js",
+        "lint": "eslint .",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:ci": "vitest run --reporter=dot --coverage"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mongoose": "^8.6.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "@vitest/coverage-v8": "^2.1.9",
+        "eslint": "^9.13.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-n": "^17.10.3",
+        "eslint-plugin-promise": "^7.1.0",
+        "globals": "^15.9.0",
+        "supertest": "^7.0.0",
+        "vitest": "^2.1.3"
+    }
 }
