@@ -1,7 +1,7 @@
 {
     "name": "counter-api",
     "version": "1.0.0",
-    "description": "Tiny Counter API (Express + MongoDB) with CI/CD",
+    "description": "Tiny Counter API (Express) with CI/CD",
     "main": "src/index.js",
     "type": "module",
     "scripts": {
